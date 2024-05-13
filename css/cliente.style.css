@@ -1,0 +1,77 @@
+/* Estilo global para toda la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/wave.png); /* Cambia el color de fondo según tus preferencias */
+}
+
+/* Estilo para el encabezado (header) */
+header {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 300px; /* Ajusta el ancho máximo según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+}
+header  h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 300px; /* Ajusta el ancho máximo según tus preferencias */
+    color: #04CF9E; /* Cambia el color del texto según tus preferencias */
+}
+/* Estilo para las secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff; /* Cambia el color de fondo para las secciones */
+}
+
+/* Estilo para los títulos */
+h2 {
+    color: #333; /* Cambia el color del texto del título según tus preferencias */
+}
+
+/* Estilo para la galería de imágenes */
+.galeria-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.galeria img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para el formulario de reserva de cita */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="submit"] {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* Estilo para el pie de página (footer) */
+footer {
+    text-align: center;
+    background-color: #333; /* Cambia el color de fondo del pie de página */
+    color: #fff; /* Cambia el color del texto del pie de página según tus preferencias */
+    padding: 10px;
+}
+

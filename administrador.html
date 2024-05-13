@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Administrador-Perfect-Skin</title>
+    <link rel="stylesheet" href="css/administrador.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head> 
+<body>
+    <style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(img/wave.png);
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */ /
+    /* Puedes ajustar más estilos, como el color de fondo, si lo deseas */
+}
+    </style>
+    <div class="container">
+        <div class="login-content">
+            <!-- Opciones ocultas por defecto -->
+            <div class="options" id="options">
+                <a href="citasagendadas.html">Ver Citas Agendadas</a>
+                <a href="#">Crear Usuario</a>
+            </div>
+
+            <!-- Botón o ícono para mostrar opciones -->
+            <button id="show-options-button" onclick="toggleOptions()"><i class='bx bx-down-arrow'></i></button>
+        </div>
+    </div>
+
+   <script src="js/administrador.js"></script>
+</body>
+</html>

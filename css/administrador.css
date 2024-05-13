@@ -1,0 +1,97 @@
+/* Estilos para centrar el formulario horizontalmente y reducir su tamaño */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(img/wave.png);
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */ /
+    /* Puedes ajustar más estilos, como el color de fondo, si lo deseas */
+}
+
+.container {
+    text-align: center;
+}
+
+.login-content {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Ajusta el ancho máximo según tus preferencias */
+}
+
+/* Estilos para los elementos del formulario */
+.input-div {
+    margin-bottom: 15px;
+}
+
+.input-div .input {
+    padding: 8px;
+}
+
+.input-div .i {
+    font-size: 18px;
+}
+
+/* Estilos para el botón */
+.input[type="submit"] {
+    padding: 8px 15px;
+    background-color: #04CF9E; /* Cambia el color del botón según tus preferencias */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input[type="submit"]:hover {
+    background-color: #03AE85; /* Cambia el color del botón al pasar el cursor por encima */
+}
+
+.title {
+    font-family: sans-serif; /* Cambia la fuente del título según tus preferencias */
+    color: #333; /* Cambia el color del texto del título según tus preferencias */
+}
+
+.options {
+    display: none;
+    position: absolute;
+    top: 40px;
+    /* Ajusta la posición vertical según tu diseño */
+    left: 10px;
+    /* Ajusta la posición horizontal según tu diseño */
+    background: #fff;
+    border: 1px solid #04CF9E;
+    padding: 10px;
+    z-index: 1;
+}
+
+.options a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #04CF9E;
+    /* Corregido el color aquí */
+}
+
+.options a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilo para el botón de opciones */
+#show-options-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
+body{
+    background-color: c;
+}
+

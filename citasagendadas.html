@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Citas Agendadas</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        text-align: center;
+        background-color: #03AE85;
+        color: #fff;
+        padding: 10px;
+    }
+
+    table {
+        width: 80%;
+        border-collapse: collapse;
+        margin: 20px auto;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid #007bff;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #03AE85;
+        color: #fff;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 20px auto;
+        width: 150px;
+    }
+    </style>
+</head>
+
+<body>
+    <h2>Citas Agendadas</h2>
+
+    <table  border="1">
+        <tr>
+            <th>ID</th>
+            <th>Fecha</th>
+            <th>Mes</th>
+            <th>Año</th>
+            <th>Hora</th>
+            <th>Correo del Cliente</th>
+            <th>Acciones</th>
+        </tr>
+     
+    </table>
+    <script>
+    function editarCita(citaID) {
+      
+        window.location.href = "editarcitas.html" + citaID;
+    }
+    </script>
+
+</body>
+
+</html>

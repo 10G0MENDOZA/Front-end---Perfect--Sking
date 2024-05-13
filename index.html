@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Perfect - Skin</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+    <!-- Imagen de fondo -->
+    <img class="wave" src="img/wave.png">
+    <div class="container">
+        <div class="img">
+            <img src="img/Perfect-Skin.jpg">
+        </div>
+        <div class="login-content2">
+            <!-- Redes sociales -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/PerefectsSkin?locale=es_LA" class="social-icon facebook"
+                    target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/perfectskin_ctg/?igshid=MzRlODBiNWFlZA%3D%3D"
+                    class="social-icon instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class "date-time" id="date-time"></div> <!-- Elemento para mostrar la fecha y hora -->
+
+            <div class="login-content">
+                <form method="post" id="login-form">
+                    <h2 class="title">
+                        Bienvenido
+                    </h2>
+
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="div">
+                            <h5>nombre</h5>
+                            <input type="text" class="input input-effect" id="username" name="username">
+                            <div class="alert" id="nombreAlert"></div>
+                        </div>
+                    </div>
+
+                    <div class="div">
+                        <h5>Rol</h5>
+                        <select class="input input-effect" id="rol" name="rol">
+                            <option value="administrador">administrador</option>
+                            <option value="cliente">cliente</option>
+                        </select>
+                    </div>
+
+                    <!-- Campos de contraseña -->
+                    <div class="div" id="password-fields" class="hidden">
+                        <div class="input-div focus">
+                            <div class="i">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Clave</h5>
+                                <input type="password" class="input input-effect" id="password">
+                                <div class="alert" id="passwordAlert"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Campos adicionales ocultos -->
+                    <div id="additional-fields" class="hidden">
+                        <div class="input-div focus">
+                            <div class="i">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="div">
+                                <h5>apellido</h5>
+                                <input type="text" name="apellido" class="input input-effect">
+                                <div class="alert" id="apellidoAlert"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-div focus">
+                            <div class="i">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="div">
+                                <h5>edad</h5>
+                                <input type="text" name="edad" class="input input-effect">
+                                <div class="alert" id="edadAlert"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-div focus">
+                            <div class="i">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="div">
+                                <h5>CC</h5>
+                                <input type="text" name="CC" class="input input-effect">
+                                <div class="alert" id="ccAlert"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn" value="Ingresar">
+                </form>
+
+                <!-- Elemento para mostrar el mensaje de registro exitoso -->
+                <div id="registroExitoso">
+                    <p style="color: #04CF9E;">Registro exitoso. Continuar...</p>
+                </div>
+
+                <!-- Elemento para mostrar el mensaje de bienvenida al administrador -->
+                <div id="bienvenidaAdmin">
+                    Bienvenido, administrador. Redirigiendo...
+                </div>
+
+                <!-- Elemento para mostrar el mensaje de error -->
+                <div id="mensajeError"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/cliente.js"></script>
+</body>
+</html>
