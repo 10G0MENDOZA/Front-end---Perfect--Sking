@@ -1,5 +1,5 @@
 let tiempoInactivo = 0;
-const tiempoInactivoMaximo = 4 * 60 * 1000; 
+const tiempoInactivoMaximo = 1 * 60 * 1000; 
 
 function reiniciarTiempoInactivo() {
     tiempoInactivo = 0;

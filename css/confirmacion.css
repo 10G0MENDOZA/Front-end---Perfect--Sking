@@ -1,0 +1,31 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+h2 {
+    color: #04CF9E; /* Verde */
+}
+p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
