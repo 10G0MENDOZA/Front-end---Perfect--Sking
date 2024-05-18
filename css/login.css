@@ -1,0 +1,48 @@
+body {
+    background: #f8f9fa url("img/wave.png") repeat-x;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #04CF9E;
+}
+
+.navbar .btn-success {
+    background-color: #04CF9E;
+    border-color: #04CF9E;
+}
+
+.login-section {
+    padding: 60px 0;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 40px;
+}
+
+h3 {
+    color: #04CF9E;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 9px #1d1d1d;
+}
+
+.image-section {
+    margin-top: 50px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}

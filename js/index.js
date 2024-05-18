@@ -1,5 +1,5 @@
 const listUsers = async () => {
-    const response = await fetch("http://localhost:9998/person/save");
+    const response = await fetch("http://localhost:9998/api/persons");
     const users = await response.json();
 
     let tableBody = ``;
@@ -10,7 +10,7 @@ const listUsers = async () => {
         </tr>`;
     });
     // document.getElementById("tableBody_Users").innerHTML = tableBody;
-    tableBody_Users.innerHTML = tableBody;
+    const tableBody_Users = document.getElementById('tableBody_Users');
 };
 
 window.addEventListener("load", function () {
@@ -27,7 +27,7 @@ function savePerson() {
 
 const savePersonPost = async (usernameReq, passwordReq) => {
 
-    var url = "http://localhost:9998/person/save";
+    var url = "http://localhost:9998/api/persons";
     var data = { username: usernameReq, password: passwordReq };
     
     fetch(url, {
@@ -49,7 +49,7 @@ function registrar() {
 
     $.ajax({
         type: "POST",
-        url: "registrar_clientes.php",
+        url: "registrar_clientes",
         data: {
             method: 'crear',
             usernanme: name,
@@ -61,7 +61,8 @@ function registrar() {
             document.getElementById('registroExitoso').style.display = 'block';
             setTimeout(function() {
                 document.getElementById('registroExitoso').style.display = 'none';
-            }, 3000); // Después de 3 segundos, oculta el mensaje de registro exitoso
+            }, 3000); 
+            // Después de 3 segundos, oculta el mensaje de registro exitoso
         }
     });
 }

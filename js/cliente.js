@@ -5,7 +5,7 @@ function registrarCliente() {
     var edad = document.querySelector('#login-form #additional-fields input[name="edad"]').value;
     var CC = document.querySelector('#login-form #additional-fields input[name="CC"]').value;
 
-    var url = "http://localhost:9998/cliente/save";
+    var url = "http://localhost:9998/api/save";
     var data = { 
         nombre: username,
         apellido: apellido,

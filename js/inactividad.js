@@ -9,7 +9,7 @@ function verificarInactividad() {
     tiempoInactivo += 1000; 
     if (tiempoInactivo >= tiempoInactivoMaximo) {
        
-        window.location.href = 'index.html';
+        window.location.href = 'login.html';
     }
 }
 
