@@ -1,5 +1,5 @@
 const listUsers = async () => {
-    const response = await fetch("http://localhost:9998/api/persons");
+    const response = await fetch("http://localhost:9998/api/cliente");
     const users = await response.json();
 
     let tableBody = ``;
@@ -17,17 +17,17 @@ window.addEventListener("load", function () {
     listUsers();
 });
 
-function savePerson() {
+function saveCliente() {
 
    var username = document.getElementById("username").value;
    var password = document.getElementById("password").value;
 
-   savePersonPost(username, password);
+   saveClinentePost(username, password);
 }
 
-const savePersonPost = async (usernameReq, passwordReq) => {
+const saveClientePost = async (usernameReq, passwordReq) => {
 
-    var url = "http://localhost:9998/api/persons";
+    var url = "http://localhost:9998/api/cliente";
     var data = { username: usernameReq, password: passwordReq };
     
     fetch(url, {

@@ -46,3 +46,112 @@ img {
     height: auto;
     margin-bottom: 30px;
 }
+body {
+    background: url('img/wave.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.login-section {
+    margin-top: 150px;
+}
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-body {
+    padding: 2rem;
+}
+.image-section img {
+    max-height: 300px;
+    transition: transform 0.3s;
+}
+.image-section img:hover {
+    transform: scale(1.05);
+}
+.image-section {
+    margin-top: 50px;
+}
+.intro-section img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.navbar {
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#3d-container-left, #3d-container-right {
+    width: 500px;
+    height: 600px;
+    background-color: transparent;
+}
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.welcome-content {
+    max-width: 600px;
+    text-align: center;
+}
+.welcome-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.services-section {
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+.services-section h2 {
+    margin-bottom: 40px;
+}
+.service-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.service-card-body {
+    padding: 2rem;
+}
+.footer-section {
+    background: #f8f9fa;
+}
+.footer-section ul {
+    padding-left: 0;
+    list-style: none;
+}
+.footer-section ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    #3d-container-left, #3d-container-right {
+        display: none;
+    }
+    .welcome-content {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
