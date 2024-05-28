@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Citas Agendadas</title>
     <link rel="icon" href="img/logo.png" type="image/png">
     <style>
     body {
         font-family: Arial, sans-serif;
-
         margin: 0;
         padding: 0;
     }
@@ -63,25 +61,26 @@
 <body>
     <h2>Citas Agendadas</h2>
 
-    <table  border="1">
-        <tr>
-            <th>ID</th>
-            <th>Fecha</th>
-            <th>Mes</th>
-            <th>Año</th>
-            <th>Hora</th>
-            <th>Correo del Cliente</th>
-            <th>Acciones</th>
-        </tr>
-     
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Cedula</th>
+                <th>Edad</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Correo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
     </table>
-    <script>
-    function editarCita(citaID) {
-      
-        window.location.href = "editarcitas.html" + citaID;
-    }
-    </script>
-  <script src="js/inactividad.js"></script>
-</body>
 
+    <script src="js/citasagendadas.js"></script>
+    
+</body>
 </html>

@@ -157,8 +157,8 @@ loginForm.addEventListener('submit', function(e) {
 
 const validateSession = async (usernameReq, passwordReq) => {
 
-    var url = "http://localhost:9998/person/validate-user";
-    var data = { name : usernameReq, password: passwordReq };
+    var url = "http://localhost:9998/api/admin/login";
+    var data = { username : usernameReq, password: passwordReq };
     
     const response = await fetch(url, {
       method: "POST", // or 'PUT'
@@ -168,6 +168,7 @@ const validateSession = async (usernameReq, passwordReq) => {
       },
     });
     const validate = await response.json();
+    console.log(validate)
     if(validate){
          // Muestra el mensaje de bienvenida al administrador
          document.getElementById('bienvenidaAdmin').style.display = 'block';

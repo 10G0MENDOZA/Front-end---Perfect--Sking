@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Editar Cita</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+  <style>
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    background-color: #03AE85;
+    color: #fff;
+    padding: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #03AE85;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #029c6d;
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e7f9e7;
+    color: #2d8f2d;
+    border: 1px solid #2d8f2d;
+    border-radius: 5px;
+    display: none;
+}
+
+.back-button {
+    display: block;
+    text-align: center;
+    background-color: #03AE85;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 200px;
+    margin: 20px auto;
+}
+
+  </style>
+</head>
+
+<body>
+    <h2>Editar Cita</h2>
+    <form id="editarCitaForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+        
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" name="cedula">
+        
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad">
+        
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo">
+        
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha">
+        
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora">
+        
+        <button type="submit">Guardar cambios</button>
+    </form>
+    
+    <div id="message" style="display:none;">Cita actualizada con éxito.</div>
+    <button id="backButton" style="display:none;" onclick="window.location.href='citasagendadas.html';">Volver</button>
+
+    <script src="js/editarcitas.js"></script>
+</body>
+
+</html>
