@@ -1,4 +1,5 @@
 
+
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +20,7 @@ body{
 
 .navbar {
     padding: 0.25rem;
-    background-color: #38d39f;
+    background-color: #00589e;
 }
 
 .navbar-collapse {
@@ -136,7 +137,7 @@ body{
 }
 
 .descripción{
-    color:#38d39f;
+    color:#00589e;
     text-align:center;
     width: fit-content;
     margin-left: 40%;
@@ -174,7 +175,7 @@ body{
         
         height: 40px;
         border: 0;
-        background: #38d39f;
+        background: #00589e;
         border-radius: 7px;
         position: relative;
         width: 200px;
@@ -217,7 +218,7 @@ body{
 /*CONTENEDOR DE INFORMACIÓN*/
 
 .titulo1info{
-    color: black;
+    color: #00589e;
     width: fit-content;
     position: absolute;
     font-size:20px;
@@ -228,7 +229,6 @@ body{
     position: absolute;
     margin-top:-4%;
     font-size: 20px;
-    color: #38d39f;;
 }
 .imginfo{
     position: absolute;
@@ -238,7 +238,7 @@ body{
 }
 
 .titulo2info{
-    color:  black;
+    color: #00589e;
     width:fit-content;
     position: absolute;
     margin-top: -7%;
@@ -252,7 +252,6 @@ body{
     margin-left: 62%;
     margin-top:-4%;
     font-size: 20px;
-    color: #38d39f;;
 }
 
 .imgreunion{

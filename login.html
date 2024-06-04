@@ -1,78 +1,66 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <title>Perfect Skin - Bienvenido</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="icon" href="img/LOGO.jpeg">
-    <link href="https://perfectskinctg.com/public/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <title>Perfect-Skin</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/login.css">
-</head>
+    <script src="js/animaciones.js"></script>
+</head> 
 <body>
-    <style>
-        body {
-            background: url(img/wave.png);
-        }
-        .image-section img {
-            max-height: 300px;
-        }
-        .image-section p {
-            color: black;
-            font-size: 18px;
-        }
-    </style>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Perfect Skin</a>
-            <div class="navbar-brand">
-                <a href="https://www.google.com/maps/place/Laura+Nu%C3%B1ez+Perfectskin/@10.3835516,-75.4910621,17z/data=!3m1!4b1!4m6!3m5!1s0x8ef625ab21a8f709:0x4e417575818c264d!8m2!3d10.3835463!4d-75.4884872!16s%2Fg%2F11kj48ckrg?entry=ttu" target="_blank">Dirección del local</a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light navbar_link_color">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="login.html">
+                    <img class="logonav" src="img/LOGO.jpeg" width="60" alt="Logo de la página web">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
                     <li class="nav-item">
-                        <a class="btn btn-success" href="index.html">Iniciar Sesión</a>
+                        <a class='nav-link' href='index.html'>Inicia Sesión</a>
                     </li>
+                    <li class="nav-item">
+                        <a class='nav-link' href='registrarse.html'>Regístrate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acercadenosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <div class="login-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-8">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="text-center mb-4">Bienvenido a Perfect Skin</h3>
-                            <p class="text-muted text-center mb-4">En Perfect Skin, nos dedicamos a proporcionar servicios de belleza excepcionales, personalizados y de vanguardia.</p>
-                        </div>
-                    </div>
-                </div>
+    </nav>  
+    <section class="general">
+        <div class="grid-layout">
+            <h4 id="desgeneral" class="titulo">Bienvenido a Perfect Skin</h4>
+            <h5 id="desgeneral" class="descripción">En Perfect Skin, nos dedicamos a proporcionar servicios de belleza excepcionales, personalizados y de vanguardia</h5>
+            <img src="img/LOGO.jpeg" class="imagenpracticas">
+            <div id="desgeneral" class="botones">
+                <a href='index.html'><button id="boton1" class="boton">Iniciar Sesión</button></a>
+                <a href='registrarse.html'><button id="boton2" class="boton">Registrarse</button></a>
+                <br>
+            </div>
+            <div id="informacion" class="info">
+                <h2 id="informacion" class="titulo1info">Incrementa tus conocimientos</h2>
+                <h4 id="informacion" class="descripción1info">Obtén experiencia mientras realizas tus prácticas profesionales.</h4>
+                <img id="informacion" src="" class="imginfo">
+                <h2 id="informacion" class="titulo2info">Desbloquea Capacidades</h2>
+                <h4 id="informacion" class="descripción2info">Aprenderás a trabajar en equipo para conseguir objetivos.</h4>
+                <img id="informacion" src="img/mujer.svg" class="imgreunion">
             </div>
         </div>
-    </div>
-
-    <div id="image-section" class="image-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <img src="img/img5.jpg" class="img-fluid rounded mb-4" alt="Imagen 1">
-                    <p>Descubre nuestra línea de cremas faciales.</p>
-                </div>
-                <div class="col-lg-4">
-                    <img src="img/img3.jpg" class="img-fluid rounded mb-4" alt="Imagen 2">
-                    <p>Explora nuestros productos para el cuidado de la piel.</p>
-                </div>
-                <div class="col-lg-4">
-                    <img src="img/img7.jpg" class="img-fluid rounded mb-4" alt="Imagen 3">
-                    <p>Conoce más sobre nuestros tratamientos de belleza.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://perfectskinctg.com/public/assets/js/bootstrap.bundle.min.js"></script>
+    </section>
 </body>
 </html>
