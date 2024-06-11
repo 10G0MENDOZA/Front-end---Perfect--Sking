@@ -1,0 +1,33 @@
+.general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-content {
+    text-align: center;
+}
+.title {
+    margin-bottom: 20px;
+}
+.subtitle {
+    margin-bottom: 30px;
+}
+.input-div {
+    margin-bottom: 20px;
+}
+.links {
+    margin-top: 20px;
+}
+.btn {
+    background-color: #38d39f;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+.btn:hover {
+    background-color: #32b88f;
+}

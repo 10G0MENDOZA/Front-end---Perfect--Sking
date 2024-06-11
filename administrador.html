@@ -1,39 +1,35 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-    <title>Administrador-Perfect-Skin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
     <link rel="stylesheet" href="css/administrador.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="img/logo.png" type="image/png">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="img/LOGO.jpeg" type="image/png">
 </head> 
-<body>
-    <style>
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+<style>
+    body {
+    font-family: 'Mulish', Arial, sans-serif;
     height: 100vh;
     margin: 0;
-    background: url(img/wave.png);
-    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */ /
-    /* Puedes ajustar más estilos, como el color de fondo, si lo deseas */
+    background-image: url(img/wave.png);
+    background-size: cover;
+    color: #343a40;
 }
-    </style>
-    <div class="container">
-        <div class="login-content">
-            <!-- Opciones ocultas por defecto -->
-            <div class="options" id="options">
-                <a href="citasagendadas.html">Ver Citas Agendadas</a>
-             
-            </div>
-
-            <!-- Botón o ícono para mostrar opciones -->
-            <button id="show-options-button" onclick="toggleOptions()"><i class='bx bx-down-arrow'></i></button>
-        </div>
+</style>
+<body>
+    <div class="menu-button-container">
+        <button id="show-options-button" onclick="toggleOptions()"><i class='bx bx-menu'></i> Menú</button>
     </div>
-
-   <script src="js/administrador.js"></script>
-   <script src="js/inactividad.js"></script>
+    <div class="options" id="options">
+        <a href="citasagendadas.html"><i class='bx bx-calendar'></i> Ver Citas Agendadas</a>
+        <a href="clientes.html"><i class='bx bx-user'></i> Ver Clientes</a>
+        <a href="servicios.html"><i class='bx bx-wrench'></i> Servicios</a>
+        <a href="configuracion.html"><i class='bx bx-cog'></i> Configuración</a>
+    </div>
+    <script src="js/administrador.js"></script>
+    <script src="js/inactividad.js"></script>
 </body>
 </html>
+    

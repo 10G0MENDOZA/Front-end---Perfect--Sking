@@ -70,9 +70,70 @@ button {
 button:hover {
     background-color: #2b956e;
 }
+
 .img-pequena {
     width: 200px; /* Cambia este valor al ancho deseado */
     height: auto; /* Esto mantendrá la proporción original */
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar_link_color .nav-link {
+    color: #38d39f;
+}
+
+.navbar_link_color .nav-link:hover {
+    color: #32b88f;
+}
+
+.logonav {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #38d39f;
+}
+.video-container {
+    display: flex;
+    flex-direction: column;
+}
+.video-container video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre los videos */
+}
+.contact-form {
+    text-align: center;
+}
+
+.btn-submit {
+    background-color: #38d39f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Espacio superior para separar el botón de los demás campos */
 }

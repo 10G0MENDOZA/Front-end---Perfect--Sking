@@ -2,35 +2,72 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros</title>
-    <link rel="stylesheet" href="css/sobrenosotros.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="img/LOGO.jpeg">
+    <title>Acerca de nosotros </title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/acercadenosotros.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head> 
 <body>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light navbar_link_color">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="login.html">
+                    <img class="logonav" src="img/LOGO.jpeg" width="60" alt="Logo de la página web">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class='nav-link' href='inicia.html'>Inicia Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class='nav-link' href='registrarse.html'>Regístrate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acercadenosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
     <header>
         <h1>Nosotros</h1>
     </header>
 
     <main>
-        <section id="descripcion">
+        <!-- Sección de descripción -->
+        <section>
+            <div class="image-wrapper">
+                <img src="img/Fondo1.avif" alt="Imagen 1">
+                <img src="img/img3.jpg" alt="Imagen 2">
+                <img src="img/Fondo2.jpg" alt="Imagen 3">
+            </div>
             <h2>Sobre Nosotros</h2>
             <p>En Laura Nuñez - Perfectskin, nuestra pasión por la belleza va más allá de lo superficial. Somos un equipo dedicado de profesionales apasionados por brindar experiencias de belleza transformadoras que van desde lo externo hasta lo más profundo de la autoestima.</p>
             <p>Creemos en la belleza auténtica, aquella que refleja la esencia única de cada persona. Nos esforzamos por resaltar lo mejor de cada individuo, no solo mediante tratamientos estéticos de vanguardia, sino también a través de un enfoque holístico que promueve el bienestar emocional y la confianza interior.</p>
         </section>
 
-        <section id="mision">
+        <!-- Sección de misión -->
+        <section>
             <h2>Misión</h2>
             <p>En Laura Nuñez - Perfectskin, nos comprometemos a realzar la belleza interior y exterior de cada individuo que entra por nuestras puertas. Nuestra misión es proporcionar servicios de belleza excepcionales, personalizados y de vanguardia que no solo transformen la apariencia física, sino también promuevan la confianza, el bienestar y la autoestima. Nos esforzamos por crear un ambiente acogedor, donde nuestros clientes se sientan cuidados, escuchados y mimados en cada visita.</p>
         </section>
 
-        <section id="vision">
+        <!-- Sección de visión -->
+        <section>
             <h2>Visión</h2>
             <p>Nos visualizamos como el referente líder en el mundo de la belleza estética, reconocidos por nuestra excelencia en el servicio al cliente, nuestra innovación constante en tratamientos y técnicas, y nuestro compromiso inquebrantable con la satisfacción del cliente. Buscamos no solo embellecer a nuestros clientes, sino también inspirarlos a abrazar su propia singularidad y a sentirse empoderados en su propia piel. Aspiramos a ser un centro de belleza que trascienda las expectativas, creando experiencias transformadoras que perduren en la memoria y en el corazón de nuestros clientes.</p>
         </section>
     </main>
-
-    <footer>
-        <button onclick="window.location.href='inicio.html'">Volver a Inicio</button>
-    </footer>
 </body>
 </html>

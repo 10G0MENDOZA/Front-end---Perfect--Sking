@@ -1,57 +1,65 @@
 /* Estilo global para toda la página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Mulish', sans-serif;
     margin: 0;
     padding: 0;
+    background: url('../img/wave.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Estilo para la barra de navegación */
+.navbar_link_color .nav-link {
+    color: #38d39f;
+}
+
+.navbar_link_color .nav-link:hover {
+    color: #32b88f;
+}
+
+.logonav {
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 /* Estilo para el encabezado (header) */
 header {
     text-align: center;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 300px; /* Ajusta el ancho máximo según tus preferencias */
-    color: #fff; /* Cambia el color del texto según tus preferencias */
+    padding: 60px 0 20px;
 }
-header  h1 {
-    text-align: center;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 300px; /* Ajusta el ancho máximo según tus preferencias */
-    color: #04CF9E; /* Cambia el color del texto según tus preferencias */
+
+header h1 {
+    color: #04CF9E;
 }
+
 /* Estilo para las secciones */
 section {
-    margin: 20px;
+    margin: 20px 0;
     padding: 20px;
     border: 1px solid #ddd;
-    background-color: #fff; /* Cambia el color de fondo para las secciones */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo para los títulos */
 h2 {
-    color: #333; /* Cambia el color del texto del título según tus preferencias */
+    color: #333;
 }
 
 /* Estilo para la galería de imágenes */
-.galeria-container {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-}
-
 .galeria img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border: 1px solid #ddd;
+    border-radius: 10px;
 }
 
 /* Estilo para el formulario de reserva de cita */
 form {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto; /* Centra horizontalmente */
 }
 
@@ -61,16 +69,51 @@ label {
 
 input[type="date"],
 input[type="time"],
+input[type="email"],
 input[type="submit"] {
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para el botón de testimonios */
+.boton-testimonios,
+.boton-reserva {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #38d39f; /* Color del botón */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none; /* Sin borde */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-size: 1rem; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor al pasar sobre el botón */
+}
+
+.boton-testimonios:hover,
+.boton-reserva:hover {
+    background-color: #32b88f; /* Cambio de color al pasar el cursor */
 }
 
 /* Estilo para el pie de página (footer) */
 footer {
     text-align: center;
-    background-color: #333; /* Cambia el color de fondo del pie de página */
-    color: #fff; /* Cambia el color del texto del pie de página según tus preferencias */
+    background-color: #343a40;
+    color: #fff;
     padding: 10px;
 }
 
+/* Estilo para los iconos de redes sociales */
+.social-icons a {
+    color: #343a40;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #38d39f;
+}

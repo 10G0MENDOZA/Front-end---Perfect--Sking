@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="icon" href="img/LOGO.jpeg">
+    <title>Inicia sesión</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/inicia.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light navbar_link_color">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="login.html">
+                    <img class="logonav" src="img/LOGO.jpeg" width="60" alt="Logo de la página web">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class='nav-link' href='inicia.html'>Inicia Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class='nav-link' href='registrarse.html'>Regístrate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acercadenosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    <section class="general">
+        <div class="login-content">
+            <form action="inicia.html">
+                <h2 class="title">Bienvenido</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Nombre</h5>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Apellido</h5>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Edad</h5>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div class="div">
+                        <h5>CC</h5>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Contraseña</h5>
+                        <input type="password" class="input">
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="registrarse.html" class="left-link">¿No tienes cuenta?</a>
+                    
+                    <a href="recuperar.html" class="right-link">Olvidaste contraseña?</a>
+                </div>
+                <input type="submit" class="btn" value="Ingresar">
+            </form>
+        </div>
+    </section>
+    <script src="js/efectos.js"></script>
+</body>
+</html>
