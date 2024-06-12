@@ -23,7 +23,9 @@
             <h2>Información</h2>
             <p>¡Descubre la excelencia en el cuidado de tu piel con Perfect Skin! Explora nuestra gama de servicios y productos diseñados para transformar y resaltar tu belleza natural. Somos líderes en el país en el tratamiento de barros, eliminación de imperfecciones y revitalización de la piel. ¡Confía en nosotros para revelar la mejor versión de ti!</p>
         </section>
-
+        <div class="text-center mt-3">
+            <a href="precios.html" class="btn boton-testimonios">Ver precios de tratamientos faciales</a>
+        </div>
         <section class="fotografias mt-5">
             <h2>Fotografías De nuestros clientes</h2>
             <div class="galeria d-flex justify-content-center">
@@ -56,9 +58,19 @@
                     <label for="hora" class="form-label">Hora:</label>
                     <input type="text" id="hora" name="hora" class="form-control flatpickr-time" required>
                 </div>
+                <div class="mb-3">
+                    <label for="servicio" class="form-label">Servicio:</label>
+                    <select id="servicio" name="servicio" class="form-select" required>
+                        <option value="" disabled selected>Seleccione un servicio</option>
+                        <option value="Tratamiento Facial Básico">Tratamiento Facial Básico</option>
+                        <option value="Tratamiento Facial Avanzado">Tratamiento Facial Avanzado</option>
+                        <option value="Tratamiento Facial de Lujo">Tratamiento Facial de Lujo</option>
+                    </select>
+                </div>
                 <input type="submit" class="btn boton-reserva" value="Reservar">
             </form>
         </section>
+        
     </main>
 
     <footer class="text-center py-4">
