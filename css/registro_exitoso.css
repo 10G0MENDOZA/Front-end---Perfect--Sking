@@ -1,0 +1,57 @@
+/* registro_exitoso.css */
+
+/* Estilo general para la sección de éxito de registro */
+.registration-success-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para la página */
+}
+
+.success-message {
+    text-align: center;
+    background-color: #ffffff; /* Fondo blanco para el mensaje */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para el cuadro del mensaje */
+}
+
+.success-message h2 {
+    color: #38d39f; /* Color verde para el título */
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 20px;
+}
+
+.success-message p {
+    color: #333333; /* Color de texto para el mensaje */
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 30px;
+}
+
+.success-message i {
+    color: #38d39f; /* Color verde para el ícono */
+}
+
+.btn-primary {
+    background-color: #38d39f; /* Color del botón */
+    border-color: #38d39f; /* Color del borde del botón */
+    font-family: 'Mulish', sans-serif;
+}
+
+.btn-primary:hover {
+    background-color: #32c77a; /* Color de fondo del botón en hover */
+    border-color: #32c77a; /* Color del borde del botón en hover */
+}
+
+@media (max-width: 768px) {
+    .registration-success-content {
+        padding: 10px;
+    }
+
+    .success-message {
+        padding: 20px;
+    }
+}

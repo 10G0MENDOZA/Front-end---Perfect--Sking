@@ -452,3 +452,19 @@ body{
 
     
 }
+.navbar-nav .dropdown-menu {
+    background-color: #38d39f; /* Cambia el color de fondo del menú */
+    color: rgb(255, 255, 255); /* Cambia el color del texto */
+    border: none; /* Elimina el borde del menú */
+}
+
+/* Cambia el color de los enlaces en el menú desplegable */
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: white;
+}
+
+/* Cambia el color del enlace cuando el cursor está encima */
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #292C35; /* Cambia el color de fondo a gris oscuro cuando se hace hover */
+    color: #38d39f; /* Cambia el color del texto a verde */
+}

@@ -1,0 +1,79 @@
+/* Estilo general para la página de pago */
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: #f0f4f8; /* Fondo general suave */
+    color: #333; /* Color de texto principal */
+}
+
+header {
+    background-color: #38d39f; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+    padding: 30px 0;
+    border-bottom: 2px solid #32c77a; /* Línea inferior para destacar el encabezado */
+}
+
+h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+main {
+    background-color: #fff; /* Fondo blanco para el contenido principal */
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para el contenido */
+}
+
+.payment-info h2 {
+    color: #38d39f; /* Color verde para el título */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.payment-info h3 {
+    color: #32c77a; /* Color verde más claro para los subtítulos */
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.payment-info p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.qr-code img {
+    width: 200px; /* Tamaño del código QR */
+    height: auto;
+    border: 1px solid #ddd; /* Borde opcional para el código QR */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+}
+
+.payment-option {
+    background-color: #f9f9f9; /* Fondo gris suave para cada opción de pago */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra suave para las opciones de pago */
+}
+
+.btn-primary {
+    background-color: #38d39f; /* Color del botón */
+    border-color: #38d39f; /* Color del borde del botón */
+    font-family: 'Mulish', sans-serif;
+}
+
+.btn-primary:hover {
+    background-color: #32c77a; /* Color de fondo del botón en hover */
+    border-color: #32c77a; /* Color del borde del botón en hover */
+}
+
+footer {
+    background-color: #38d39f; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto en el pie de página */
+    padding: 20px 0;
+    border-top: 2px solid #32c77a; /* Línea superior para destacar el pie de página */
+}
+
+footer p {
+    margin: 0;
+}
